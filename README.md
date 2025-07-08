@@ -7,7 +7,6 @@ A simple and secure HTTP server written in Go that provides structured logging w
 - **Structured Logging**: Uses [Zap](https://github.com/uber-go/zap) for high-performance, structured logging
 - **Automatic Log Rotation**: Implements [Lumberjack](https://github.com/natefinch/lumberjack) for automatic log file rotation
 - **HTTP API**: RESTful endpoint to read log files remotely
-- **Security**: Built-in path traversal protection to prevent unauthorized file access
 - **Reverse Order**: Logs are displayed with the most recent entries first
 - **Lightweight**: Minimal dependencies and resource usage
 
@@ -59,7 +58,7 @@ Logger initialized successfully
 
 **Example Request**:
 ```bash
-curl "http://localhost:8080/readfile?path=demo.log"
+curl "http://localhost:8080/readfile"
 ```
 
 **Example Response**:
@@ -80,8 +79,8 @@ curl "http://localhost:8080/readfile?path=demo.log"
 
 ```
 go-logger-server/
-├── main.go              # Main application file
-├── demo.log         # Default log file
+├── main.go             # Main application file
+├── demo.log            # Default log file
 ├── go.mod              # Go module file
 ├── go.sum              # Go dependencies
 └── README.md           # This file
