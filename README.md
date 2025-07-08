@@ -71,7 +71,7 @@ curl "http://localhost:8080/readfile?path=demo.log"
 
 ### Log File Structure
 
-- **Location**: All logs are stored in the `logs/` directory
+- **Location**: All logs are stored in the `root` directory
 - **Format**: Structured JSON or plain text (configurable)
 - **Rotation**: Files automatically rotate when they reach 1MB
 - **Backup**: Old log files are kept with numbered suffixes (e.g., `demo.log.1`, `demo.log.2`)
@@ -81,8 +81,7 @@ curl "http://localhost:8080/readfile?path=demo.log"
 ```
 go-logger-server/
 ├── main.go              # Main application file
-├── logs/                # Log files directory
-│   └── demo.log         # Default log file
+├── demo.log         # Default log file
 ├── go.mod              # Go module file
 ├── go.sum              # Go dependencies
 └── README.md           # This file
@@ -108,26 +107,10 @@ By default, logs rotate with these settings:
 
 Retrieves the contents of a log file in reverse chronological order.
 
-**Parameters**:
-| Parameter | Type   | Required | Description |
-|-----------|--------|----------|-------------|
-| path      | string | Yes      | Log file name |
-
-**Response Codes**:
-- `200 OK`: File read successfully
-- `400 Bad Request`: Invalid or missing path parameter
-- `404 Not Found`: Log file doesn't exist
-- `403 Forbidden`: Access denied (path traversal attempt)
-- `500 Internal Server Error`: Server error
-
 **Example**:
 ```bash
 # Success
-curl "http://localhost:8080/readfile?path=demo.log"
-
-# Error - file not found
-curl "http://localhost:8080/readfile?path=nonexistent.log"
-```
+curl "http://localhost:8080/readfile"
 
 ## 🛠️ Development
 
