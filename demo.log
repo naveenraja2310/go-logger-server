@@ -1,0 +1,12 @@
+{"level":"info","ts":"2025-07-08T20:47:38.926+0530","caller":"Logger-read-api/main.go:98","msg":"Logger initialized","fileName":"demo.log","maxSize(MB)":1,"maxBackups":3,"maxAge(days)":30,"compress":true,"logLevel":"DEBUG"}
+{"level":"info","ts":"2025-07-08T20:47:38.927+0530","caller":"Logger-read-api/main.go:33","msg":"Logger Initialized"}
+{"level":"info","ts":"2025-07-08T20:58:47.114+0530","caller":"Logger-read-api/main.go:110","msg":"Logger initialized","fileName":"demo.log","maxSize(MB)":1,"maxBackups":3,"maxAge(days)":30,"compress":true,"logLevel":"DEBUG"}
+{"level":"info","ts":"2025-07-08T20:58:47.115+0530","caller":"Logger-read-api/main.go:37","msg":"Logger Initialized"}
+{"level":"info","ts":"2025-07-08T21:04:35.527+0530","caller":"Logger-read-api/main.go:111","msg":"Logger initialized","fileName":"demo.log","maxSize(MB)":1,"maxBackups":3,"maxAge(days)":30,"compress":true,"logLevel":"DEBUG"}
+{"level":"info","ts":"2025-07-08T21:04:35.529+0530","caller":"Logger-read-api/main.go:38","msg":"Logger Initialized"}
+{"level":"info","ts":"2025-07-08T21:06:42.769+0530","caller":"Logger-read-api/main.go:115","msg":"Logger initialized","fileName":"demo.log","maxSize(MB)":1,"maxBackups":3,"maxAge(days)":30,"compress":true,"logLevel":"DEBUG"}
+{"level":"info","ts":"2025-07-08T21:06:42.770+0530","caller":"Logger-read-api/main.go:38","msg":"Logger Initialized"}
+{"level":"debug","ts":"2025-07-08T21:06:42.770+0530","caller":"Logger-read-api/main.go:39","msg":"This is a debug message"}
+{"level":"info","ts":"2025-07-08T21:06:42.770+0530","caller":"Logger-read-api/main.go:40","msg":"This is an info message"}
+{"level":"warn","ts":"2025-07-08T21:06:42.770+0530","caller":"Logger-read-api/main.go:41","msg":"Warning: potential issue detected"}
+{"level":"error","ts":"2025-07-08T21:06:42.770+0530","caller":"Logger-read-api/main.go:42","msg":"An error occurred while processing","stacktrace":"main.main\n\tC:/Users/navee/Code/POC/Logger-read-api/main.go:42\nruntime.main\n\tC:/Program Files/Go/src/runtime/proc.go:272"}
